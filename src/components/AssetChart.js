@@ -66,7 +66,9 @@ export default function AssetChart({ userId }) {
   useEffect(() => {
     if (!userId) return;
 
-    fetch(`http://localhost:8080/api/asset/summary?userId=${userId}`)
+    fetch(
+      `https://assettracker-backend.onrender.com/api/asset/summary?userId=${userId}`
+    )
       .then((res) => res.json())
       .then((data) => {
         const formatted = data.map((d) => ({

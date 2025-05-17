@@ -16,11 +16,14 @@ export default function MonthlyRecordForm({ userId, onRecordSaved }) {
     };
 
     try {
-      const response = await fetch("http://localhost:8080/api/asset/record", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(record),
-      });
+      const response = await fetch(
+        "https://assettracker-backend.onrender.com/api/asset/record",
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(record),
+        }
+      );
 
       if (response.ok) {
         setMonth("");

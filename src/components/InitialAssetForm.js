@@ -7,7 +7,7 @@ export default function InitialAssetForm({ userId, onInitialSet }) {
     e.preventDefault();
 
     const response = await fetch(
-      `http://localhost:8080/api/asset/initial?amount=${amount}&userId=${userId}`,
+      `https://assettracker-backend.onrender.com/api/asset/initial?amount=${amount}&userId=${userId}`,
       {
         method: "POST",
       }
