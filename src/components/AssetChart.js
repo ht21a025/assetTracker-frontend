@@ -24,7 +24,6 @@ const formatCurrency = (value) =>
     minimumFractionDigits: 0,
   }).format(value);
 
-// ✅ カスタムツールチップ
 const CustomTooltip = ({ active, payload, label }) => {
   if (!active || !payload || payload.length === 0) return null;
 

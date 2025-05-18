@@ -11,7 +11,6 @@ function App() {
   const [showRegister, setShowRegister] = useState(false);
   const [refreshKey, setRefreshKey] = useState(0);
 
-  // 初回読み込みで localStorage を読み取る
   useEffect(() => {
     const storedUserId = localStorage.getItem("userId");
     const storedEmail = localStorage.getItem("userEmail");
@@ -24,7 +23,7 @@ function App() {
     localStorage.removeItem("userEmail");
     setUserId(null);
     setUserEmail(null);
-    setShowRegister(false); // ログアウト後はログインフォームを表示
+    setShowRegister(false);
   };
 
   const triggerChartUpdate = () => setRefreshKey((k) => k + 1);
