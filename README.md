@@ -27,6 +27,11 @@ npm install
 npm start
 ```
 
+## アプリ画面
+![新規登録・ログイン画面](images/login.png)
+![折れ線グラフ](images/lineGraph.png)
+![棒グラフ](images/barGraph.png)
+
 ## 主な機能
 
 - ログイン／新規登録（ユーザー認証）
