@@ -13,6 +13,7 @@ import {
 } from "recharts";
 
 const formatMonthLabel = (monthStr) => {
+  if (monthStr === "初期資産") return "初期資産";
   const [year, month] = monthStr.split("-");
   return `${year}年${parseInt(month)}月`;
 };
